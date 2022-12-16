@@ -1,6 +1,11 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    mode: "development",
+    // entry: "./src/index.js",
+    performance: {
+        hints: false,
+    },
     module: {
         rules: [
             {
@@ -9,6 +14,17 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.svg$/,
+                use: ['@svgr/webpack'],
             },
             {
                 test: /\.html$/,
