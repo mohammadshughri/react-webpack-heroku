@@ -133,3 +133,11 @@ body {
 
   color: #B1BACB;
 }
+
+.checkBox {
+  width: 40px;
+  margin-top: 0px;
+  margin-bottom: -5px;
+  height: 20px;
+  margin-left: -10px;
+}

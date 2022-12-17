@@ -32,6 +32,7 @@ const ToDo = ({ toDo, markDone, setUpdateData, deleteTask }) => {
                       type="checkbox"
                       onClick={(e) => markDone(task.id)}
                       title="Completed / Not Completed"
+                      className="checkbox"
                     />
                     <label for="chkSuccess"></label>
                   </div>
